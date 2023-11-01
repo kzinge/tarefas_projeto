@@ -1,0 +1,396 @@
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'Tilt Neon', sans-serif;
+    text-decoration: none;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(16, 16, 31);
+}
+
+.container {
+    height: 100%;
+}
+
+.barra_flex {
+    display: none;
+}
+
+.add_flex {
+    display: none;
+}
+
+main {
+    display: flex;
+    position: relative;
+    height: 100%;
+}
+
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background: linear-gradient(180deg, rgba(255,119,0,1) 40%, rgba(255,172,38,1) 100%);
+    width: 100%;
+}
+
+header a h1 {
+    padding: 0.5rem;
+    font-size: 17pt;
+    color: rgb(16, 16, 31);
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid rgba(255,119,0,0.7);
+    width: 20%;
+    background-color: rgb(20, 20, 37);
+    color: white;
+}
+
+aside img {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+aside h4 {
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+aside a {
+    color: white;
+}
+
+aside a:hover {
+    color: rgba(248, 124, 15, 0.9);
+}
+
+aside h4:hover {
+    color: rgba(248, 124, 15, 0.9);
+}
+
+aside .lixo:hover {
+    color: rgb(16, 16, 31)
+}
+
+aside ul li:hover {
+    transition: 0.5s;
+    color: rgba(255,172,38,1);
+}
+
+aside .user, .add, .sair, .lixeira {
+    display: flex;
+    align-items: center;
+    padding-left: 0.5rem
+}
+
+.lixeira {
+    margin-top: 1rem;
+    background-color: rgb(248, 124, 15);
+    color: rgb(16, 16, 31);
+    width: 70%;
+    padding: 5px;
+    border-end-end-radius: 10px;
+    border-top-right-radius: 10px;
+
+}
+
+.lixeira img {
+    width: 30px;
+    height: 30px;
+}
+
+.user {
+    margin-top: 2rem;
+}
+
+.add label {
+    display: flex;
+    align-items: center;
+}
+
+.add input {
+    display: none;
+}
+
+.tarefas-aside {
+    align-items: center;
+    padding-left: 1rem;
+    margin-top: 0.3rem;
+}
+
+.tarefas-aside h1 {
+    color: rgba(255,119,0,1);
+}
+
+
+.tarefas-aside ul {
+    padding-left: 3rem;
+    list-style: decimal;
+}
+
+.tarefas-aside ul li {
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+.sair {
+    margin-top: 2rem;
+    font-size: 11pt;
+}
+
+
+.sair img {
+    width: 30px;
+    height: 30px;
+}
+
+section {
+    display: inline-flex;
+    flex-direction: column;
+    width: 80%;
+    min-height: max-content;
+    background-color: rgb(16, 16, 31);
+    color: white;
+}
+
+section img {
+    width: 40px;
+    height: 40px;
+}
+
+.cima {
+    margin-top: 1rem;
+    margin-left: 2rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+}
+
+.cima h1 {
+    font-size: 50pt;
+    color: rgba(255,119,0,0.9);
+}
+
+.cima .pesquisa {
+    margin-right: 2rem;
+    border: 1px solid rgba(255,119,0,0.9);
+    border-radius: 5px;
+    width: 30%;
+}
+
+.pesquisa label {
+    display: flex;
+    flex-direction: row;
+}
+
+.pesquisa input {
+    width: 100%;
+    padding: 3%;
+    padding-bottom: 3px;
+    color: white;
+    font-size: 13pt;
+    outline: none;
+    border: none;
+    background: transparent;
+
+}
+
+#tarefas {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 100%;
+}
+
+.tarefa {
+    display: flex;
+    flex-direction: column;
+    margin: 0.5rem 2rem 2rem 2rem;
+    flex-basis: 50px;
+    background-color: rgb(49, 49, 80);
+    padding: 1rem;
+    padding-bottom: 0;
+    border-radius: 20px;
+    box-shadow: rgba(255, 139, 77, 0.19) 0px 10px 20px;
+}
+
+.tarefa h1 {
+    font-size: 25pt;
+    color: rgba(255,119,0,0.9);
+    margin-bottom: 0.5rem;
+}
+
+#tarefas label{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 20pt;
+}
+
+#tarefas label h6 {
+    margin-right: 10px;
+}
+
+input[type="checkbox"] {
+    -webkit-appearance: none;
+    background-color: rgb(16, 16, 31);
+    border-radius: 15px;
+    width: 25px;
+    height: 25px;
+}
+
+input[type="checkbox"]:checked {
+    background-color: rgb(0, 255, 21);
+}
+
+
+.tarefa p {
+    margin-bottom: 2rem;
+}
+
+.info-tarefas {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+
+.info-tarefas span {
+    color: gray;
+}
+
+.restaurar {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    font-size: 15pt;
+
+}
+
+.restaurar img {
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+}
+
+.menu_flex label {
+    color: rgba(255,119,0,0.9);
+}
+
+.barra_flex input {
+    display: none;
+}
+
+.menu_flex {
+    display: none;
+}
+
+@media screen and (max-width: 950px) {
+    aside{
+        display: none;
+    }
+
+    section {
+        width: 100%;
+        height: 100%;
+    }
+
+    .menu_flex img {
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+
+    }
+
+    .barra_flex {
+        display: block;
+    }
+
+    .barra_flex label {
+        font-size: 20pt;
+        margin-right: 0.5rem;
+    }
+
+    #barra:checked ~ .menu_flex {
+        list-style: none;
+        background-color: rgb(20, 20, 37);
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        padding: 10px;
+        border-radius: 5px;
+        margin-bottom: 0.5rem;
+    }
+
+    .menu_flex li {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: right;
+        margin-bottom: 0.6rem;
+        cursor: pointer;
+        color: white;
+        transition: 0.5s;
+    }
+
+    .menu_flex li a {
+        color: white;
+    }
+    
+    .menu_flex li a:hover {
+        color: rgba(255,119,0,1);
+    }
+
+    .menu_flex li:hover {
+        color: rgba(255,119,0,1);
+    }
+
+
+
+    header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .cima {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .cima h1 {
+        font-size: 40pt;
+        margin-bottom: 1rem;
+    }
+
+    .pesquisa input {
+        font-size: 13pt;
+        margin-right: 1rem;
+    }
+
+    .cima .pesquisa {
+        width: 90%;
+    }
+
+    #tarefas {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap; 
+        align-items: center;
+        flex-basis: auto;
+    }
+
+}
+
+

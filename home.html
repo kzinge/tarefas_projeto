@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="icon" href="imagens/site_icon.png">
+</head>
+
+<body>
+    <div class="container">
+
+        <header>
+            <a href="home.html"><h1>Agenda de Tarefas</h1></a>
+            <div class="barra_flex">
+                <label for="barra">&#9776;</label>
+                <input type="checkbox" id="barra">
+                <ul class="menu_flex">
+                    <li><img src="imagens/icon_logo.png" alt="">Perfil</li>
+                    <li><img src="imagens/task_icon.png" alt="">Tarefas</li>
+                    <li><img src="imagens/lixo_logo.png" alt=""><a href="lixeira.html">Lixeira</a></li>
+                    <li><img src="imagens/logou_logo.png" alt=""><a href="index.html">Sair</a></li>
+                </ul>
+            </div>
+        </header>
+        <main>
+            <aside>
+                <div class="user">
+                    <img src="imagens/icon_logo.png" alt="">
+                    <h4>User</h4>
+                </div>
+                <div class="add">
+                    <label for="criar">
+                        <img src="imagens/add_logo.png" alt="">
+                        <h4>Adicionar Tarefas</h4>
+                    </label>
+                    <input type="checkbox" id="criar">
+                    <input type="checkbox" id="adicionar" checked>
+                    <div class="add-nova-tarefa">
+                        <h1>Nova Tarefa</h1>
+                        <textarea id="novatarefa" rows="20" cols="100"></textarea>
+                        <label for="criar">
+                            <h6>Criar</h6>
+                            <h6>Cancelar</h6>
+                        </label>
+                        
+                    </div>
+                </div>
+                <div class="tarefas-aside">
+                    <h1>Tarefas</h1>
+                    <ul>
+                        <li>Tarefa 1</li>
+                        <li>Tarefa 2</li>
+                        <li>Tarefa 3</li>
+                        <li>Tarefa 4</li>
+                    </ul>
+                </div>
+                <div class="lixeira">
+                    <img src="imagens/lixo_logo.png" alt="">
+                    <a href="lixeira.html">Lixeira</a>
+                </div>
+                <div class="sair">
+                    <img src="imagens/logou_logo.png" alt="">
+                    <a href="index.html">Sair</a>
+                </div>
+            </aside>
+
+            <section>
+                <div class="cima">
+                    <h1>Suas Tarefas</h1>
+                    <div class="pesquisa">
+                        <label for="pesquisaid">
+                            <img src="imagens/pesquisa_logo.png" alt="">
+                            <input type="text" id="pesquisaid" placeholder="Pesquisar">
+                        </label>
+                    </div>
+                    <div class="add_flex">
+                        <label for="criar_flex">
+                            <img src="imagens/add_logo.png" alt="">
+                            <h4>Adicionar Tarefas</h4>
+                        </label>
+                        <input type="checkbox" id="criar_flex">
+                        <input type="checkbox" id="adicionar_flex" checked>
+                        <div class="add-nova-tarefa_flex">
+                            <h1>Nova Tarefa</h1>
+                            <textarea id="novatarefa_flex" rows="20" cols="100"></textarea>
+                            <label for="criar_flex">
+                                <h6>Criar</h6>
+                                <h6>Cancelar</h6>
+                            </label>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div id="tarefas">
+                    <div class="tarefa">
+                        <div class="tarefa-concluida">
+                            <label for="concluido">
+                                <h6>MARCAR COMO CONCLUIDA</h6>
+                                <input type="checkbox" id="concluido">
+                            </label>
+                        </div>
+                        <h1>Tarefa 1</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, soluta debitis nesciunt
+                            dolore
+                            saepe expedita dicta maiores illo esse delectus blanditiis officia pariatur cumque quae.
+                            Amet
+                            repudiandae qui quo eaque.</p>
+                        <div class="info-tarefas">
+                            <span>ultima edição: <i>14:23</i></span>
+                            <div class="apagar">
+                                <img src="imagens/lixo_logo.png" alt="">
+                                <h6>Apagar Tarefa</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tarefa">
+                        <div class="tarefa-concluida">
+                            <label for="concluido1">
+                                <h6>MARCAR COMO CONCLUIDA</h6>
+                                <input type="checkbox" id="concluido1">
+                            </label>
+                        </div>
+                        <h1>Tarefa 2</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, soluta debitis nesciunt
+                            dolore
+                            saepe expedita dicta maiores illo esse delectus blanditiis officia pariatur cumque quae.
+                            Amet
+                            repudiandae qui quo eaque.</p>
+                        <div class="info-tarefas">
+                            <span>ultima edição: <i>14:23</i></span>
+                            <div class="apagar">
+                                <img src="imagens/lixo_logo.png" alt="">
+                                <h6>Apagar Tarefa</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tarefa">
+                        <div class="tarefa-concluida">
+                            <label for="concluido2">
+                                <h6>MARCAR COMO CONCLUIDA</h6>
+                                <input type="checkbox" id="concluido2">
+                            </label>
+                        </div>
+                        <h1>Tarefa 3</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, soluta debitis nesciunt
+                            dolore
+                            saepe expedita dicta maiores illo esse delectus blanditiis officia pariatur cumque quae.
+                            Amet
+                            repudiandae qui quo eaque.</p>
+                        <div class="info-tarefas">
+                            <span>ultima edição: <i>14:23</i></span>
+                            <div class="apagar">
+                                <img src="imagens/lixo_logo.png" alt="">
+                                <h6>Apagar Tarefa</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tarefa">
+                        <div class="tarefa-concluida">
+                            <label for="concluido3">
+                                <h6>MARCAR COMO CONCLUIDA</h6>
+                                <input type="checkbox" id="concluido3">
+                            </label>
+                        </div>
+                        <h1>Tarefa 4</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, soluta debitis nesciunt
+                            dolore
+                            saepe expedita dicta maiores illo esse delectus blanditiis officia pariatur cumque quae.
+                            Amet
+                            repudiandae qui quo eaque.</p>
+                        <div class="info-tarefas">
+                            <span>ultima edição: <i>14:23</i></span>
+                            <div class="apagar">
+                                <img src="imagens/lixo_logo.png" alt="">
+                                <h6>Apagar Tarefa</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+
+</html>
